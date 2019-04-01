@@ -13,15 +13,20 @@
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+     <!--  <a class="navbar-brand" href="#">
             <img src="./images/logo.png" class="d-inline-block align-top" alt="">
              Nos voyages
-        </a>
+        </a>--> 
+        <p class="demo navbar-text">
+            Voici une démo d'un projet réalisé en HTML5, CSS3 et JavaScript ES6/7, développé avec Npm, Webpack et Babel. <br/>
+            Le survol de la liste des voyages à gauche modifie la carte, et inversement le clic d'une destination sur la carte modifie la liste. <br/>
+            Retrouvez l'ensemble du code sur mon github : <a target="_blank" href="https://github.com/ThomasDelort/voyages">https://github.com/ThomasDelort/voyages</a>.
+        </p>
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <div id="travels-container" class="col-sm-6 col-md-5 col-lg-4 col-xl-3"></div>
-            <div id="map-container" class="col-sm-6 col-md-7 col-lg-8 col-xl-9">
+            <div id="travels-container" class="col-sm-12 col-md-5 col-lg-4 col-xl-3"></div>
+            <div id="map-container" class="col-md-7 col-lg-8 col-xl-9 d-none d-md-block">
                 <div id="map"></div>
                 <div id="lieu"></div>
                 <button type="button" id="reset-map" class="btn btn-secondary btn-sm"> Réinitialiser la sélection</button>

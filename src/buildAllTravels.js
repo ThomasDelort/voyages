@@ -22,9 +22,9 @@ function buildAllTravels() {
         <h4 class="card-header font-weight-bold">
             ${travel.description}
         </h4>
-        <a href="https://photos.app.goo.gl/${travel.link}" target="_blank"><img class="card-img" src="${travel.imagePath}" alt=""></a>
+        <a href="${travel.link}"><img class="card-img" src="${travel.imagePath}" alt=""></a>
         <div class="card-body">
-            <a href="${travel.link}" class="btn btn-danger btn-block" target="_blank">Voir l'album</a>
+            <a href="${travel.link}" class="btn btn-danger btn-block">Voir l'album</a>
         </div>
     </div>`;
         travelsContainer.appendChild(travelElement);
