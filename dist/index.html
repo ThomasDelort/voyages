@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nos voyages</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" class="d-inline-block align-top" alt="">
+             Nos voyages
+        </a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="travels-container" class="col-sm-6 col-md-5 col-lg-4 col-xl-3"></div>
+            <div id="map-container" class="col-sm-6 col-md-7 col-lg-8 col-xl-9">
+                <div id="map"></div>
+                <div id="lieu"></div>
+                <button type="button" id="reset-map" class="btn btn-secondary btn-sm"> Réinitialiser la sélection</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="bundle.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6lOKZeBoDqm3dTvRN8FCcStYxEBuYoME&callback=init"
+        async defer></script>
+</body>
+
+</html>

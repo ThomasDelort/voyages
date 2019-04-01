@@ -1,0 +1,117 @@
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+nav.navbar {
+    height: 76px;
+    padding-top: 12px;
+}
+
+nav.navbar img {
+    height: 50px;
+    width: 75px;
+    margin-top: -6px;
+
+}
+
+a.navbar-brand {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container-fluid {
+    height: calc(100% - 76px);
+}
+.row {
+    height: 100%;
+    overflow-y: auto;
+}
+#map-container {
+    padding: 0px;
+    height: 100%;
+}
+#travels-container {
+    padding: 30px;
+    overflow-y: auto;
+    height: 100%;
+    background: #eee;
+}
+
+.gm-style-mtc {
+    display: none;
+}
+
+div.card{
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+div.card-body{
+    padding:0;
+}
+h4.card-header{
+    color: #333;
+    border-radius: 5px 5px 0 0 !important;
+    padding: 10px;
+}
+img.card-img {
+    border-radius: 0;
+}
+
+a.btn-danger{
+    background-color: #9664ba;
+    border-color: #9664ba;
+    border-radius: 0 0 5px 5px;
+}
+
+a.btn-danger:hover{
+    background-color: #4a2e63;
+    border-color: #4a2e63;
+}
+
+div.show div a.btn-danger, div.over div a.btn-danger {
+    background-color: #ea4335;
+    border-color: #ea4335;
+}
+
+div.show div a.btn-danger:hover, div.over div a.btn-danger:hover {
+    background-color: #811411;
+    border-color: #811411;
+}
+
+
+#reset-map{
+    position: absolute;
+    z-index: 10;
+    left: calc(50% - 100px);
+    bottom: 10px;
+    width: 200px;
+}
+
+.hide {
+    display: none !important;
+}
+
+#lieu{
+    position: absolute;
+    z-index: 10;
+    left: calc(50% - 100px);
+    top: 10px;
+    width: 200px;
+    pointer-events:none;
+}
+
+#lieu p {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: -1px 0  #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
+    text-align: center;
+}
