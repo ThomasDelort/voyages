@@ -347,12 +347,6 @@ var destinations = [{
     lng: 4.896230
   }
 }, {
-  title: "Rosay",
-  coordinates: {
-    lat: 48.917115,
-    lng: 1.685643
-  }
-}, {
   title: "Bruxelles",
   coordinates: {
     lat: 50.846735,
@@ -470,7 +464,7 @@ function buildAllTravels() {
       }
 
       destlist = destlist.substring(0, destlist.length - 1);
-      travelElement.innerHTML = "<div class=\"card text-center\" destinations=\"".concat(destlist, "\">\n        <h4 class=\"card-header font-weight-bold\">\n            ").concat(travel.description, "\n        </h4>\n        <a href=\"https://photos.app.goo.gl/").concat(travel.link, "\" target=\"_blank\"><img class=\"card-img\" src=\"").concat(travel.imagePath, "\" alt=\"\"></a>\n        <div class=\"card-body\">\n            <a href=\"https://photos.app.goo.gl/").concat(travel.link, "\" class=\"btn btn-danger btn-block\" target=\"_blank\">Voir l'album</a>\n        </div>\n    </div>");
+      travelElement.innerHTML = "<div class=\"card text-center\" destinations=\"".concat(destlist, "\">\n        <h4 class=\"card-header font-weight-bold\">\n            ").concat(travel.description, "\n        </h4>\n        <a href=\"").concat(travel.link, "\"><img class=\"card-img\" src=\"").concat(travel.imagePath, "\" alt=\"\"></a>\n        <div class=\"card-body\">\n            <a href=\"").concat(travel.link, "\" class=\"btn btn-danger btn-block\">Voir l'album</a>\n        </div>\n    </div>");
       travelsContainer.appendChild(travelElement);
       /* mouseover des cards */
 
@@ -582,139 +576,133 @@ var data = [{
   id: 1,
   imagePath: "images/2018-japon.jpg",
   description: "Japon, Mai 2018",
-  link: "kmPCUAWSbUsdAkki9",
+  link: "#",
   etapes: ["Osaka", "Tokyo", "Fukuoka"]
 }, {
   id: 2,
   imagePath: "images/2016-londres.jpg",
   description: "Londres, Novembre 2016",
-  link: "VG4fieKK7EB1Tu1K7",
+  link: "#",
   etapes: ["Londres"]
 }, {
   id: 3,
   imagePath: "images/2016-provence.jpg",
   description: "Provence, Septembre 2016",
-  link: "H5E1GMfaobn1JCh88",
+  link: "#",
   etapes: ["Avignon"]
 }, {
   id: 4,
   imagePath: "images/2016-lisbonne.jpg",
   description: "Lisbonne, Août 2016",
-  link: "g4xc6weLr4ALNT59A",
+  link: "#",
   etapes: ["Lisbonne"]
 }, {
   id: 5,
   imagePath: "images/2016-japon.jpg",
   description: "Japon, Avril 2016",
-  link: "eYTvAhGDM8Hmccmr9",
+  link: "#",
   etapes: ["Kyoto", "Tokyo"]
 }, {
   id: 6,
   imagePath: "images/2015-londres-dec.jpg",
   description: "Londres, décembre 2015",
-  link: "mLzS2nmbqcy2XNKm8",
+  link: "#",
   etapes: ["Londres"]
 }, {
   id: 7,
   imagePath: "images/2015-madere.jpg",
   description: "Madère, octobre 2015",
-  link: "kCgfGyUwcAm1Kt827",
+  link: "#",
   etapes: ["Madère"]
 }, {
   id: 8,
   imagePath: "images/2015-newyork.jpg",
   description: "New York, août 2015",
-  link: "7Hs1Vi17t3yTCRPz7",
+  link: "#",
   etapes: ["New York"]
 }, {
   id: 9,
   imagePath: "images/2015-londres-mai.jpg",
   description: "Londres, mai 2015",
-  link: "aDdaErFLb6N8H4fk6",
+  link: "#",
   etapes: ["Londres"]
 }, {
   id: 10,
   imagePath: "images/2015-milan.jpg",
   description: "Milan (Expo Universelle), mai 2015",
-  link: "WHHmWQ1VpKTHUfEh8",
+  link: "#",
   etapes: ["Milan"]
 }, {
   id: 11,
   imagePath: "images/2014-japon.jpg",
   description: "Japon, novembre 2014",
-  link: "ugeeWgTLPYKtR3dj6",
+  link: "#",
   etapes: ["Osaka", "Tokyo", "Kyoto", "Miyajima"]
 }, {
   id: 12,
   imagePath: "images/2014-belgique.jpg",
   description: "Belgique, août 2014",
-  link: "34vGvSLRJZQVHwTA8",
+  link: "#",
   etapes: ["Bruxelles"]
 }, {
   id: 13,
-  imagePath: "images/2014-mariage.jpg",
-  description: "Mariage, 28 juin 2014",
-  link: "Ek4vx3wtpYtdcNfG6",
-  etapes: ["Rosay"]
-}, {
-  id: 14,
   imagePath: "images/2013-amsterdam.jpg",
   description: "Amsterdam, août 2013",
-  link: "bzqbzzfQ61qoVuke9",
+  link: "#",
   etapes: ["Amsterdam"]
 }, {
-  id: 15,
+  id: 14,
   imagePath: "images/2013-stockholm.jpg",
   description: "Stockholm, août 2013",
-  link: "YvUS8VggbAPMjGGP6",
+  link: "#",
   etapes: ["Stockholm"]
 }, {
-  id: 16,
+  id: 15,
   imagePath: "images/2013-venise.jpg",
   description: "Venise, mai 2013",
-  link: "dnUy6RYYKGzzT8w28",
+  link: "#",
   etapes: ["Venise"]
 }, {
-  id: 17,
+  id: 16,
   imagePath: "images/2012-thailande.jpg",
   description: "Thaïlande, août 2012",
-  link: "UoW17a4U3PHV9ATv5",
+  link: "#",
   etapes: ["Ko Samui", "Bangkok"]
 }, {
-  id: 18,
+  id: 17,
   imagePath: "images/2012-londres.jpg",
   description: "Londres, mai 2012",
-  link: "sUvwvQjGj36D5mmK6",
+  link: "#",
   etapes: ["Londres"]
 }, {
-  id: 19,
+  id: 18,
   imagePath: "images/2011-prague.jpg",
   description: "Prague, décembre 2011",
-  link: "Cb84GrzXAG4ctoZ17",
+  link: "#",
   etapes: ["Prague"]
 }, {
-  id: 20,
+  id: 19,
   imagePath: "images/2011-usa.jpg",
   description: "États-Unis, septembre 2011",
-  link: "uZJJX5KywPjkGTNh7",
+  link: "#",
   etapes: ["New York", "Las Vegas"]
 }, {
-  id: 21,
+  id: 20,
   imagePath: "images/2010-strasbourg.jpg",
   description: "Strasbourg, décembre 2010",
-  link: "obTydedTKhLpQfMMA",
+  link: "#",
   etapes: ["Strasbourg"]
 }, {
-  id: 22,
+  id: 21,
   imagePath: "images/2010-londres.jpg",
   description: "Londres, juillet 2010",
-  link: "MqYuNd15E4L9ZAdN7",
+  link: "#",
   etapes: ["Londres"]
 }, {
-  id: 23,
+  id: 22,
   imagePath: "images/2008-rome.jpg",
   description: "Rome, avril 2008",
-  link: "MzSoPLrDYwRDgmuX9",
+  link: "#",
   etapes: ["Rome"]
 }];
 
